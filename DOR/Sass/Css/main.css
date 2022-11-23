@@ -1,0 +1,69 @@
+.volcanes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.volcan1, .volcan4, .volcan3, .volcan2 {
+  font-family: "Dancing Script", cursive;
+  margin: 0.5%;
+  height: 300px;
+  width: 500px;
+  border-radius: 1%;
+  border: 1px solid black;
+  box-shadow: 0 0 15px 1px black;
+  color: white;
+  flex: auto;
+  background-color: black;
+  background-image: url("../Img/volcan1.jpeg");
+  background-repeat: no-repeat;
+  background-size: 40% 100%;
+}
+.volcan1 h1, .volcan4 h1, .volcan3 h1, .volcan2 h1, .volcan1 h2, .volcan4 h2, .volcan3 h2, .volcan2 h2, .volcan1 p, .volcan4 p, .volcan3 p, .volcan2 p {
+  margin-left: 42%;
+}
+.volcan1 h1, .volcan4 h1, .volcan3 h1, .volcan2 h1 {
+  color: pink;
+}
+.volcan1 h2, .volcan4 h2, .volcan3 h2, .volcan2 h2 {
+  color: grey;
+}
+
+.volcan2 {
+  background-image: url("../Img/volcan2.jpeg");
+}
+
+.volcan3 {
+  background-image: url("../Img/volcan3.jpeg");
+}
+
+.volcan4 {
+  background-image: url("../Img/volcan4.jpeg");
+}
+
+.sass {
+  width: 60px;
+  height: 40px;
+}
+
+header {
+  flex-direction: column;
+  background-color: black;
+  color: pink;
+  font-family: "Dancing Script", cursive;
+  font-size: large;
+  justify-content: space-between;
+  display: flex;
+}
+
+header ul {
+  text-align: end;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  overflow: hidden;
+  list-style: none;
+}
+
+.inicio {
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */

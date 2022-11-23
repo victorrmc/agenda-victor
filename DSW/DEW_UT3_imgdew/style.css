@@ -1,0 +1,26 @@
+/* ponle el estilo que quieras ... utiliza flex ...*/
+.lista-imagenes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.imagen{
+margin: 2%;
+
+}
+.temblar{
+  @-webkit-keyframes tiembla{
+    0%  { -webkit-transform:rotateZ(-5deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+    100%{ -webkit-transform:rotateZ( 5deg); }
+  }
+}
+.imagen img{
+  width: 250px;
+  height: 250px;
+  filter: drop-shadow(0 0 5px black);
+ 
+
+}
+.imagen img:hover {border-radius:50%;
+    -webkit-border-radius:50%;
+    box-shadow: 0px 0px 15px 15px blueviolet;}

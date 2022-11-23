@@ -1,0 +1,23 @@
+div {
+  padding: 2px;
+}
+
+#agenda {
+  margin: 0 auto;
+  align-items: center;
+  border: 1px solid black;
+  width: 20%;
+}
+#Id, #Nombre, #Apellido1, #Apellido2,#Fechanacimiento, #boton{
+  position: absolute;
+  margin: 0px;
+  left: 10%;
+  
+}
+#formulario{
+  margin: 1px;
+}
+#error {
+  color: red;
+  margin-top: 2%;
+}

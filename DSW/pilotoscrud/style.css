@@ -1,0 +1,29 @@
+div {
+  padding: 2px;
+}
+#agenda {
+  text-align: center;
+    
+    border: 1px solid black;
+    
+    display: inline-flex;
+}
+#agenda td, th{
+  border: 1px solid black;
+}
+  #Id, #Nombre, #anos, #dsId{
+    position: absolute;
+    margin: 0px;
+    left: 15%;
+   
+    
+  }
+  #formulario{
+    margin: 1px;
+    
+  }
+  #error {
+    color: red;
+    margin-top: 2%;
+  }
+  

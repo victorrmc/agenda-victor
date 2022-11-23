@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand ps-5" href="#">
+                <img src="/DOR/BoostrapComponentes/img/pdc-logo.png" width="20px" height="30px"
+                    class="d-inline-block align-text-top">
+                <span class="text-light">Canarias</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">
+                            Portada
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted " href="deportes.html">
+                            Deportes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-muted" href="rutas.html">
+                            Rutas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="contacto.html">
+                            Contáctanos
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center ">
+                        <a class="nav-link text-warning" href="">
+                            <i class="bi bi-exclamation-triangle-fill"></i>
+                        </a>
+                    </li>
+                    <li class="d-flex align-items-center  ">
+                        <a class="nav-link text-danger" href="">
+                            <i class="bi bi-exclamation-circle-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+        <ol class="breadcrumb ms-5 pt-3 pb-3 bg-light ">
+            <li class="breadcrumb-item"><a href="index.html">Portada</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Rutas</li>
+        </ol>
+
+    </nav>
+    <div class="mx-5">
+        <div class="row  " data-masonry="{&quot;percentPosition&quot;: true }">
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class=" card border-danger">
+                    <div class="card-header bg-danger fs-2 text-white">Destacado</div>
+                    <img width="100%" height="200" src="/DOR/BoostrapComponentes/img/rutas-marcos-cordero.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruta de Marcos y Cordero</h5>
+                        <p class="card-text">Situada en la isla de La Palma, se considera una de las rutas
+                            indispensables, no solo de esta isla, sino de toda Canarias.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card bg-success">
+                    <div class="card-header text-white">Frase Célebre</div>
+                    <div class="card-body">
+                        <figure class="mb-0">
+                            <blockquote class="blockquote">
+                                <h5 class="card-title text-white">El arte</h5>
+                                <p class="card-text text-white">"El arte es algo mucho más importante, mucho más
+                                    profundo, para no caer en la
+                                    elemental y pobre vulgaridad de la ordinariez humana cada vez más acentuada, cuando
+                                    no se ha
+                                    planificado inteligentemente un despliegue de la llamada educación cívica y
+                                    cultural."</p>
+                                <p class="card-text">
+                                <figcaption class="blockquote-footer mb-0 ">
+                                    <small class="text-white"> Cesar Manrique en <cite title="Memorias y Obras">Memorias
+                                            y Obras</cite> </small>
+                                </figcaption>
+                            </blockquote>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-sm-6 col-lg-4 mb-4" >
+            <div class=" card border-danger">
+                <div class="card-header bg-danger fs-2 text-white">Destacado</div>
+                <img width="100%" height="200" src="/DOR/BoostrapComponentes/img/rutas-marcos-cordero.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Ruta de Marcos y Cordero</h5>
+                    <p class="card-text">Situada en la isla de La Palma, se considera una de las rutas indispensables, no solo de esta isla, sino de toda Canarias.</p>
+                </div>
+            </div>
+        </div> -->
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card  border-primary">
+                    <img width="100%" height="200" src="/DOR/BoostrapComponentes/img/rutas-barranco-las-vacas.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title">Barranco las Vacas</h5>
+                        <p class="card-text text-muted">Gran Canaria</p>
+                        <p class="card-text">Estas llamativas formaciones tienen cierto parecido al famoso Antelope
+                            Canyon de Estados Unidos.¿Por qué? Por sus peculiares formaciones rocosas llmadas Tobas de
+                            Colores.</p>
+                        <small class="text-muted">Last update 3 mins ago</small>
+                    </div>
+                </div>
+            </div>
+
+           
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card bg-primary text-white text-center p-3">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p>El agua se espera en la tierra y la guagua en la carretera</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-white">
+                            Refranero popular
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card bg-info">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-white">Mil Ventanas</h5>
+                        <p class="card-text text-white">Ruta situada en el municipio de Güimar no apta para aquellas
+                            personas que sufren miedo a las alturas</p>
+                        <p class="card-text text-white">Foto cedida por un fotagrafo</small></p>
+                    </div>
+                    <img width="100%" height="200" src="/DOR/BoostrapComponentes/img/rutas-mil-ventanas.jpg">
+                </div>
+            </div>
+            
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card ">
+                    <img width="100%" height="200" src="/DOR/BoostrapComponentes/img/rutas-teide.jpg">
+                    <div class="card-body">
+                        <small class="text-muted">Ascensión al Teide</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card text-bg-dark">
+                    <img width="100%" height="200" src="/DOR/BoostrapComponentes/img/rutas-volcanes.jpg">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title text-center bg-light text-dark">Ruta de los volcanes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card bg-warning text-dark  p-3">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p>El viaje de mil millas comienza con un solo paso.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0">
+                            Frase motivadora
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4">
+                <div class="card border-info">
+                    <h5 class="card-header border-info text-info">Tenerife</h5>
+                    <img width="100%" height="200" src="/DOR/BoostrapComponentes/img/rutas-afur.jpg">
+                    <div class="card-body">
+                        <p class="card-text text-secundary">Barranco de Afur</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+
+</body>
+
+</html>

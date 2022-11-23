@@ -1,0 +1,28 @@
+@import "_colors.scss";
+.sass{
+    width: 60px; 
+    height: 40px;
+    
+}
+header{
+    flex-direction: column;
+    background-color: $dark;
+    color: $secondary;
+    font-family: 'Dancing Script', cursive;
+    font-size:large;
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+header ul{
+    text-align: end;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    overflow: hidden;
+    list-style:none;
+}
+.inicio{
+    position:absolute;  
+}

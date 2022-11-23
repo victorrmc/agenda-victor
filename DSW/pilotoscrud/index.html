@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD PILOTOS</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>CRUD Piloto</h1>
+<div id="agenda">
+ 
+</div>
+  
+  <div id="formulario">
+  <div>
+    <span>Id: </span><input type="text" id="Id">
+  </div>
+  <div>
+    <span>Nombre: </span><input type="text" id="Nombre">
+  </div>
+  <div>
+    <span>Años: </span><input type="text" id="anos">
+  </div>
+  <div>
+    <span> Despues del id: </span><input type="text" id="dsId">
+  </div>
+</div>
+  <div id="boton">
+    <button onclick="Crear(Id.value, Nombre.value, anos.value, dsId.value);">Crear</button>
+    <button onclick="Actualizar(Id.value, Nombre.value, anos.value);">Actualizar</button>
+    <button onclick="Eliminar(Id.value, Nombre.value, anos.value);">Eliminar</button>
+  </div>
+<div id="error">
+</div>
+<!-- partial -->
+</body>
+<script  src="./distinciones.js"></script>
+  <script  src="./script.js"></script>
+</html>

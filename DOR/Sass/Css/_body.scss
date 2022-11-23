@@ -1,0 +1,48 @@
+@import "_colors.scss";
+//como hacer para ocupen todo el espacio las tarjetas
+//imagenes
+//header esta raro
+.volcanes{
+    display: flex;
+    flex-wrap: wrap;
+}    
+.volcan1{
+    
+    font-family: 'Dancing Script', cursive;
+    margin: 0.5%;
+    height: 300px;
+    width: 500px;
+    border-radius: 1%;
+    border: 1px solid $dark;
+    box-shadow: 0 0 15px 1px $dark;
+    color:white;
+    flex: auto;
+    background: {
+        color: $dark;
+        image: url("../Img/volcan1.jpeg");
+        repeat:no-repeat;
+        size: 40% 100%;
+    }
+    h1,h2,p{
+        margin-left: 42%;
+    }
+    h1{
+        color: $secondary;
+    }
+    h2{
+        color: $info;
+    }
+}
+
+.volcan2{
+    background-image: url("../Img/volcan2.jpeg")  ;
+    @extend .volcan1
+}
+.volcan3{
+    background-image: url("../Img/volcan3.jpeg")  ;
+    @extend .volcan1
+}
+.volcan4{
+    background-image: url("../Img/volcan4.jpeg")  ;
+    @extend .volcan1
+}

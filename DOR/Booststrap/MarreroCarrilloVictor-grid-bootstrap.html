@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Document</title>
+  <style>
+    @media(min-width: 0px) {
+      body {
+        background-color: purple;
+      }
+    }
+
+    @media(min-width: 576px) {
+      body {
+        background-color: green;
+      }
+    }
+
+    @media(min-width: 768px) {
+      body {
+        background-color: orange;
+      }
+    }
+
+    @media(min-width: 992px) {
+      body {
+        background-color: blue;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container text-left">
+    <div class="row">
+      <div class="col p-0 d-md-none d-lg-block">
+        <div class="card   p-3">1</div>
+      </div>
+      <div class="col p-0">
+        <div class="card  p-3">2</div>
+      </div>
+      <div class="col p-0">
+        <div class="card  p-3">3</div>
+      </div>
+      <div class="col p-0 d-sm-none d-md-block">
+        <div class="card  p-3">4</div>
+      </div>
+    </div>
+
+    <hr class= "d-block d-sm-none bg-white">
+    <div class="row ">
+      <div class="col p-0 d-block d-sm-none">
+        <div class="card  p-3 order-2 order-sm-last text-danger">30</div>
+      </div>
+      <div class="col p-0 d-block d-sm-none">
+        <div class="card  p-3 order-1 order-sm-last text-danger">20</div>
+      </div>
+      <div class="col p-0 d-block d-sm-none">
+        <div class="card  text-danger p-3 ">40</div>
+      </div>
+    </div>
+    <hr class="bg-white">
+    <div class="row">
+      <div class="col p-0">
+        <div class="card order-2 order-sm-last order-md-2 order-lg-last p-3">6</div>
+      </div>
+      <div class="col p-0">
+        <div class="card order-1 order-sm-last order-md-1 order-lg-last p-3">5</div>
+      </div>
+    </div>
+    <hr class="bg-white">
+    <div class="row">
+      <div class="col p-0 offset-sm-2 offset-md-0">
+        <div class="card  p-3">7</div>
+      </div>
+      <div class="col p-0 d-sm-none d-md-block">
+        <div class="card  p-3">8</div>
+      </div>
+      <div class="col p-0 offset-sm-2 offset-md-0">
+        <div class="card  p-3">9</div>
+      </div>
+      <div class="col p-0 d-sm-none d-md-block">
+        <div class="card  p-3">10</div>
+      </div>
+      <div class="col p-0 offset-sm-2 offset-md-0">
+        <div class="card  p-3">11</div>
+      </div>
+      <div class="col p-0 d-sm-none d-md-block">
+        <div class="card  p-3">12</div>
+      </div>
+    </div>
+    <hr class="bg-white">
+    <div class="row">
+      <div class="col p-0">
+        <div class="card d-none d-lg-block d-xl-none p-3">100</div>
+      </div>
+      <div class="col p-0">
+        <div class="card d-none d-lg-block d-xl-none p-3">200</div>
+      </div>
+      <div class="col p-0">
+        <div class="card d-none d-lg-block d-xl-none p-3">300</div>
+      </div>
+      <div class="col p-0">
+        <div class="card d-none d-lg-block d-xl-none p-3">400</div>
+      </div>
+      <div class="col p-0">
+        <div class="card d-none d-lg-block d-xl-none p-3">500</div>
+      </div>
+      <div class="col p-0">
+        <div class="card d-none d-lg-block d-xl-none p-3">600</div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
