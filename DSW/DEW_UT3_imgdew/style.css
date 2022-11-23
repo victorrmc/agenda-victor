@@ -7,17 +7,22 @@
 margin: 2%;
 
 }
-.temblar{
-  @-webkit-keyframes tiembla{
+
+@-webkit-keyframes tiembla{
     0%  { -webkit-transform:rotateZ(-5deg); }
     50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
     100%{ -webkit-transform:rotateZ( 5deg); }
-  }
 }
+.imageneliminar {
+
+  filter: blur(4px);
+}
+
 .imagen img{
   width: 250px;
   height: 250px;
   filter: drop-shadow(0 0 5px black);
+  
  
 
 }

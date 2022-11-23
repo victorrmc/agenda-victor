@@ -46,7 +46,11 @@ function Añadir(url) {
 }
 function seleccionar(e){
     if(e.ctrlKey){
-        e.target.parentNode.("class", "temblar");
+        if(e.target.parentNode.classList.contains("imageneliminar")){
+        e.target.parentNode.classList.remove("imageneliminar");
+    }else{
+        e.target.parentNode.classList.add("imageneliminar");
+    }
     }
     
 }
