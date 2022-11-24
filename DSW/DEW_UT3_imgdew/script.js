@@ -8,7 +8,7 @@ let agenda = ["https://calzetonia.com/wp-content/uploads/2020/04/ea72ee53-1.jpg"
     }
     agenda = JSON.parse(localStorage.getItem("imgdew", JSON.stringify(agenda)));
     newlist = document.createElement("div")
-    newlist.setAttribute("class", "lista-imagenes")
+    newlist.setAttribute("id", "lista-imagenes")
     document.body.insertAdjacentElement("afterend", newlist)
 
     agenda.forEach(i => {
@@ -43,6 +43,10 @@ function Añadir(url) {
         storageImagen = localStorage.setItem("imgdew", JSON.stringify(agenda));
     }
     
+}
+function Eliminar(){
+   eliminar = document.querySelectorAll(".imageneliminar");
+   document.getElementById("lista-imagenes").removeChild(eliminar);
 }
 function seleccionar(e){
     if(e.ctrlKey){
