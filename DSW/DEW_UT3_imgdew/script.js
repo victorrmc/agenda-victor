@@ -8,7 +8,7 @@ let agenda = ["https://calzetonia.com/wp-content/uploads/2020/04/ea72ee53-1.jpg"
     agenda = JSON.parse(localStorage.getItem("imgdew", JSON.stringify(agenda)));
     newlist = document.createElement("div")
     newlist.setAttribute("id", "lista-imagenes")
-    document.body.insertAdjacentElement("afterend", newlist)
+    document.body.insertAdjacentElement("beforeend", newlist)
 
     agenda.forEach(i => {
         newdiv = document.createElement("div")
@@ -17,9 +17,9 @@ let agenda = ["https://calzetonia.com/wp-content/uploads/2020/04/ea72ee53-1.jpg"
         newimg.setAttribute("src", i)
         newdiv.insertAdjacentElement("beforeend", newimg);
         newdiv.addEventListener("animationend", Eliminarhtml);
-
         newlist.insertAdjacentElement("afterbegin", newdiv);
-        newlist.addEventListener("click", seleccionar);
+
+        document.body.addEventListener("click", seleccionar);
     });
     // Lista de imágenes que se mostrarán de forma dinámica ...
 })()
@@ -41,23 +41,23 @@ function Añadir(url) {
         newdiv.insertAdjacentElement("afterbegin", newimg);
         document.getElementsByClassName("imagen")[0].insertAdjacentElement("beforebegin", newdiv)
         storageImagen = localStorage.setItem("imgdew", JSON.stringify(agenda));
-        
+
     }
 }
 
 function Eliminar() {
     let eliminar = document.querySelectorAll(".imageneliminar");
-    eliminar.forEach(function(e) {
-        e.classList.add("imageneliminada"); 
+    eliminar.forEach(function (e) {
+        e.classList.add("imageneliminada");
     });
 }
 
-function Eliminarhtml(){
-   let  eliminar = document.querySelectorAll(".imageneliminar");
+function Eliminarhtml() {
+    let eliminar = document.querySelectorAll(".imageneliminar");
     eliminar.forEach(function (e) {
-       src = e.firstElementChild.getAttribute("src");
-       indice = agenda.indexOf(src);
-       agenda.splice(indice, 1);
+        src = e.firstElementChild.getAttribute("src");
+        indice = agenda.indexOf(src);
+        agenda.splice(indice, 1);
         document.getElementById("lista-imagenes").removeChild(e);
     });
     storageImagen = localStorage.setItem("imgdew", JSON.stringify(agenda));
@@ -65,7 +65,22 @@ function Eliminarhtml(){
 }
 
 function seleccionar(e) {
-    if (e.ctrlKey) {
-        e.target.parentNode.classList.toggle("imageneliminar");  
+    if (e.target.tagName == "IMG") {
+        if (e.ctrlKey) {
+            e.target.parentNode.classList.toggle("imageneliminar");
+        }
+        else {
+            let eliminar = document.querySelectorAll(".imageneliminar");
+            eliminar.forEach(function (e) {
+                e.classList.remove("imageneliminar");
+            });
+            e.target.parentNode.classList.add("imageneliminar");
+        }
+    }
+    else if(e.target.tagName != "INPUT"){
+        let eliminar = document.querySelectorAll(".imageneliminar");
+        eliminar.forEach(function (e) {
+            e.classList.remove("imageneliminar");
+        });
     }
 }
