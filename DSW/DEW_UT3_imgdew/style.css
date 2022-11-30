@@ -20,6 +20,19 @@ margin: 2%;
   animation-name: tiembla;
   animation-duration: 0.7s;
 }
+#arrowTop {
+
+  height: 9px;
+  width: 14px;
+  color: green;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+#arrowTop::before {
+  content: '▲';
+}
 
 .imagen img{
   width: 250px;

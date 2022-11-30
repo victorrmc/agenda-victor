@@ -1,0 +1,35 @@
+div {
+  padding: 2px;
+}
+
+#div-billetes {
+  display: flex;
+  border: 1px solid black;
+}
+
+#error {
+  color: red;
+}
+.billete{
+  border: 1px solid black;
+}
+#billete5{
+  height: 50px;
+  width: 75px;
+  background-color: rgb(187, 187, 248);
+}
+#billete10{
+  height: 60px;
+  width: 85px;
+  background-color: pink;
+}
+#billete20{
+  height: 70px;
+  width: 90px;
+  background-color: rgb(121, 146, 239);
+}
+#billete50{
+  height: 80px;
+  width: 100px;
+  background-color: rgb(234, 204, 32);
+}

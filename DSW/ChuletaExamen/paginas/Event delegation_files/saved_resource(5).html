@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://en.js.cx/task/sliding-tree/solution/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    .tree span:hover {
+      font-weight: bold;
+    }
+
+    .tree span {
+      cursor: pointer;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <ul class="tree" id="tree">
+    <li><span>Animals
+      </span><ul>
+        <li><span>Mammals
+          </span><ul>
+            <li><span>Cows</span></li>
+            <li><span>Donkeys</span></li>
+            <li><span>Dogs</span></li>
+            <li><span>Tigers</span></li>
+          </ul>
+        </li>
+        <li><span>Other
+          </span><ul>
+            <li><span>Snakes</span></li>
+            <li><span>Birds</span></li>
+            <li><span>Lizards</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><span>Fishes
+      </span><ul>
+        <li><span>Aquarium
+          </span><ul>
+            <li><span>Guppy</span></li>
+            <li><span>Angelfish</span></li>
+          </ul>
+        </li>
+        <li><span>Sea
+          </span><ul>
+            <li><span>Sea trout</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <script>
+    // move all text into <span>
+    // they occupy exactly the place necessary for the text,
+    for (let li of tree.querySelectorAll('li')) {
+      let span = document.createElement('span');
+      li.prepend(span);
+      span.append(span.nextSibling); // move the text node into span
+    }
+
+    // catch clicks on whole tree
+    tree.onclick = function(event) {
+
+      if (event.target.tagName != 'SPAN') {
+        return;
+      }
+
+      let childrenContainer = event.target.parentNode.querySelector('ul');
+      if (!childrenContainer) return; // no children
+
+      childrenContainer.hidden = !childrenContainer.hidden;
+    }
+  </script>
+
+
+
+</body></html>

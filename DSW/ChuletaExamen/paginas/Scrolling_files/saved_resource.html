@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://en.js.cx/task/endless-page/solution/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+</head>
+
+<body>
+
+<h1>Scroll me</h1>
+
+<script>
+  function populate() {
+    while(true) {
+      let windowRelativeBottom = document.documentElement.getBoundingClientRect().bottom;
+      if (windowRelativeBottom > document.documentElement.clientHeight + 100) break;
+      document.body.insertAdjacentHTML("beforeend", `<p>Date: ${new Date()}</p>`);
+    }
+  }
+
+  window.addEventListener('scroll', populate);
+
+  populate(); // init document
+</script><p>Date: Mon Nov 28 2022 08:35:57 GMT+0000 (hora estándar de Europa occidental)</p><p>Date: Mon Nov 28 2022 08:35:57 GMT+0000 (hora estándar de Europa occidental)</p><p>Date: Mon Nov 28 2022 08:35:57 GMT+0000 (hora estándar de Europa occidental)</p><p>Date: Mon Nov 28 2022 08:35:57 GMT+0000 (hora estándar de Europa occidental)</p><p>Date: Mon Nov 28 2022 08:35:57 GMT+0000 (hora estándar de Europa occidental)</p><p>Date: Mon Nov 28 2022 08:35:57 GMT+0000 (hora estándar de Europa occidental)</p><p>Date: Mon Nov 28 2022 08:35:57 GMT+0000 (hora estándar de Europa occidental)</p>
+
+
+
+</body></html>

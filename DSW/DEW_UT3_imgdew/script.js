@@ -1,6 +1,17 @@
 let agenda = ["https://calzetonia.com/wp-content/uploads/2020/04/ea72ee53-1.jpg", "https://pandasneakers.es/wp-content/uploads/2021/06/nike-air-jordan-x-dior-hombre-1575528357-1.jpg"];
 // Función IIFE
 (function () {
+    arrowTop.onclick = () => {
+        window.scrollBy({
+          top: -scrollY,
+          behavior: 'smooth',
+        });
+      };
+      
+      window.onscroll = () => {
+        arrowTop.hidden = scrollY < document.documentElement.clientHeight;
+      };
+
     let storageImagen = JSON.parse(window.localStorage.getItem("imgdew"));
     if (storageImagen === null || storageImagen.length === 0) {
         storageImagen = localStorage.setItem("imgdew", JSON.stringify(agenda));
