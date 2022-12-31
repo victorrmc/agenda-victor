@@ -1,0 +1,30 @@
+
+
+#cod-postal:invalid {
+  border: 2px solid red;
+}
+#cod-postal:required{
+  border: 2px solid orange;
+}
+#cod-postal:valid {
+  border: 2px solid green;
+}
+#edad:invalid {
+  border: 2px solid red;
+}
+#edad:valid {
+  border: 2px solid green;
+}
+#edad:optional {
+  border: 2px solid plum;
+}
+#edad:out-of-range {
+  border: 2px solid blue;
+}
+input:focus {
+  background-color: lightgray;
+}
+
+
+
+

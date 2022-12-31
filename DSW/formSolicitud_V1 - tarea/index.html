@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Solicitud de actividades deportivas</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+<!-- ====> (1) Falta un atributo en form necesario para controlar por JS el form ... corrígelo -->
+  <form novalidate action="https://www.w3schools.com/action_page.php" id="frm-solicitud">
+    <fieldset>
+      <legend>Solicitud de actividades deportivas</legend>
+      <div class="campo">
+        <label class="campo" for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" required />
+        <p class="error "></p>
+      </div>
+      <div class="campo">
+        <label class="campo" for="dni">Dni</label>
+        <input type="text" id="dni" name="dni" required />
+<!-- ====> (2) Falta la sección de errores ... corrígelo -->
+      </div>
+      <div class="campo"></div>
+      <input id="mayor-edad" type="checkbox">
+      <label for="mayor-edad">Mayor de edad</label>
+      <input type="hidden" name="mayorEdad">
+      </div>
+      <div class="campo">
+        <label class="campo">Sexo</label>
+        <input type="radio" id="sexoH" checked name="sexo" value="H" />
+        <label for="sexoH">Hombre</label>
+        <input type="radio" id="sexoM" name="sexo" value="M" />
+        <label for="sexoM">Mujer</label>
+      </div>
+      <div class="campo">
+        <label for="isla" class="campo">Isla de residencia</label>
+        <select name="isla" id="isla" required>
+          <option disabled value="" selected>Elige una isla</option>
+          <option value="LP">La Palma</option>
+          <option value="GC">Gran Canaria</option>
+          <option value="GO">La Gomera</option>
+          <option value="FV">Fuerteventura</option>
+          <option value="TF">Tenerife</option>
+          <option value="LZ">Lanzarote</option>
+          <option value="HI">El Hierro</option>
+        </select>
+        <p class="error oculto"></p>
+      </div>
+      <div class="campo">
+        <label for="municipio" class="campo">Municipio de residencia</label>
+        <select name="municipio" id="municipio" required>
+          <option disabled value="" selected>Elige un municipio</option>
+        </select>
+        <p class="error "></p>
+      </div>
+      <div class="campo">
+        <label class="campo" for="cod-postal">Código postal</label>
+<!-- ====> (3) Falta el patrón (expresión regular) para este campo ... corrígelo -->
+        <input type="text" id="cod-postal" required pattern="^[0-9]{5}$" name="cod-postal" />
+        <p class="error oculto"></p>
+      </div>
+      <div class="campo">
+        <label for="select-deportes" class="campo">Seleccionar al menos una actividad deportiva</label>
+<!-- ====> (4) Este es un campo de selección múltiple y queremos que se vean todos los valores ... corrígelo -->
+        <select id="select-deportes">
+          <option value="FT">Fútbol</option>
+          <option value="BL">Baloncesto</option>
+          <option value="TN">Tenis</option>
+          <option value="VL">Voleibol</option>
+          <option value="WT">Waterpolo</option>
+        </select>
+        <p class="error oculto"></p>
+        <!-- ====> (5) Este es un campo oculto ... corrígelo -->
+        <input type="" name="deportes" id="deportes">
+      </div>
+    </fieldset>
+    <fieldset id="datos-info-adicional">
+      <legend>
+<!-- ====> (6) Hay un error en el label ... corrígelo -->
+        <label for="info-adicional">Deseo recibir información adicional</label>
+        <input id="info-adicional" type="checkbox" name="suscripcion" checked>
+      </legend>
+      <div class="campo">
+        <label class="campo" for="fecha-atencion">Elige fecha y hora para atención personalizada sobre tu
+          solicitud</label>
+        <input type="datetime-local" id="fecha-atencion" name="fechaAtencion" required>
+        <p class="error oculto"></p>
+      </div>
+      <div class="campo">
+        <label class="campo" for="email">Correo electrónico</label>
+<!-- ====> (7) Este campo es obligatorio ... corrígelo -->
+        <input type="email" id="email" name="email" required>
+        <p class="error oculto"></p>
+      </div>
+      <div class="campo">
+<!-- ====> (8) Este campo tiene un error ... corrígelo -->
+        <label class="campo" for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono" pattern="/^\+\d{3} \d{9}$/" required>
+        <p class="error oculto"></p>
+      </div>
+    </fieldset>
+    <input type="submit" value="Enviar solicitud">
+  </form>
+  <script src="./script.js"></script>
+</body>
+
+</html>

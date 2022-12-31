@@ -22,7 +22,6 @@ const DOM = {
   // document.getElementById("billete10").addEventListener('click', sumar10);
   // document.getElementById("billete20").addEventListener("click", sumar20);
   // document.getElementById("billete50").addEventListener('click', sumar50);
-
 })()
 function seleccionar(e){
   if(e.target.id == "billete5" || e.target.parentElement.id == "billete5"){

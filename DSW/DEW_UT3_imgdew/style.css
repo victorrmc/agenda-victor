@@ -7,21 +7,35 @@
 margin: 2%;
 
 }
-
+.formulario{
+  display: flex;
+  margin: 2px;
+}
+#desaparecer{
+  margin-right: 3px;
+}
 @keyframes tiembla{
     0%  { -webkit-transform:rotateZ(-5deg); }
     50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
     100%{ -webkit-transform:rotateZ( 5deg); }
 }
-.imageneliminar {
+.imagenseleccionada {
   filter: blur(4px);
 }
 .imageneliminada{
   animation-name: tiembla;
   animation-duration: 0.7s;
 }
-#arrowTop {
-
+.formulario{
+  margin: 10px;
+  padding: 10px;
+  border: 1px black solid;
+}
+#guardar{
+  display: flex;
+  justify-content: center;
+}
+#arrowTop{
   height: 9px;
   width: 14px;
   color: green;
@@ -30,6 +44,7 @@ margin: 2%;
   left: 10px;
   cursor: pointer;
 }
+
 #arrowTop::before {
   content: '▲';
 }

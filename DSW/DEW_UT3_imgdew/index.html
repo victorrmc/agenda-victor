@@ -4,19 +4,65 @@
   <meta charset="UTF-8">
   <title>DEW UT3 imgdew</title>
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
   <h1>Victor</h1>
   <!--
     Esta es la estructura del documento que tienes que crear ...
     -->
-    <input type="text" id="url" >
-    <input type="button" id="boton" value="Añadir" onclick="Añadir(url.value);">
-    <input type="button" id="boton" value="Eliminar" onclick="Eliminar();">
-  
-    <div id="arrowTop"></div>
+    <div class="formulario">
+      <input type="text" id="busqueda" class="form-control" placeholder="Busqueda por categoria" onkeyup="search(busqueda.value)">
+    </div>  
+    <div class="formulario">
+    <div id="desaparecer">
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" id="url" placeholder="Introduce url">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="titulo" placeholder="Introduce titulo">
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-primary" onclick="Añadir(url.value, titulo.value);">Añadir</button>
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-primary" onclick="Modificar(url.value, titulo.value);">Modificar</button>
+        </div>
+      </div>
+    
+    
+    
+    <!-- <input type="text" id="url" placeholder="Introduce url">
+    <input type="text" id="titulo" placeholder="Introduce titulo" > -->
+
+    <!-- <input type="button" class="boton" value="Añadir" onclick="Añadir(url.value, titulo.value);"> -->
+ 
+
+
+    <!-- <input type="button" class="boton" value="Modificar" onclick="Modificar(url.value, titulo.value);"> -->
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="Eliminar();">Eliminar</button>
+    <!-- <input type="button" class="boton" value="Eliminar" onclick="Eliminar();"> -->
+    </div>
+    <div class="formulario">
+      <label>Cambiar a la categoria</label>
+      <select name="miSelect" id="miSelect" class="form-control" onchange="CambioCategoria()" >
+        <!-- <option value="AirForce1" selected>Air Force 1 
+        <option value="AirMax1">Air Max 1 
+        <option value="Jordan1">Jordan 1       
+        <option value="Jordan4">Jordan 4
+        <option value="Jordan11">Jordan 11 -->
+      </select> 
+    </div>
+    <div id="guardar" >
+    <button type="submit" class="btn btn-primary" onclick="Guardar();">Guardar</button>
+    <!-- <input type="button"  value="Guardar" onclick="Guardar();"> -->
+  </div>
+
+  <div id="arrowTop"></div>
     
 
-  
+  <script src="js/bootstrap.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

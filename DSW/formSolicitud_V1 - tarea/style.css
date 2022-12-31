@@ -1,0 +1,46 @@
+
+label.campo {
+  padding: 5px 0px;
+}
+.oculto{
+  display: none;
+}
+.error{
+  color: red;
+  margin: 0px;
+}
+div.campo > input:invalid {
+  border: 1px solid red;
+}
+div.campo > select:invalid {
+  border: 1px solid red;
+}
+
+div.campo > input:valid {
+  border: 1px solid green;
+}
+div.campo > select:valid {
+  border: 1px solid green;
+}
+
+input:focus {
+  background-color: lightgray;
+}
+
+select:focus {
+  background-color: lightgray;
+}
+
+fieldset > div {
+  padding: 5px 0px;
+}
+
+label.campo::after {
+  content: ":";
+}
+
+@media (max-width: 600px) {
+  label.campo {
+    display: block;
+  }
+}

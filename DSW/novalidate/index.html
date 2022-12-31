@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Form con novalidate</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<form  novalidate  action="https://www.w3schools.com/action_page.php" id="frm1" >
+  
+    <div>
+        <label for="cod-postal">Código postal:</label>
+        <input type="text" id="cod-postal" name="cod-postal" required maxlength="5" pattern="[0-9]{5}" placeholder="CP"/>
+        <span></span>
+    </div>
+    <div>
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" name="edad"  min="1" max="99" placeholder="edad"/>
+      <span></span>
+  </div>
+    <input type="submit" value="Emviar datos al servidor">
+  
+</form>
+
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
